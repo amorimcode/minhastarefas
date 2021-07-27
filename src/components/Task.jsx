@@ -12,7 +12,14 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
             </div>
 
             <div className="buttons-container">
-                <button onClick={handleTaskDeletion} className="remove-task-button"><CgClose /></button>
+                <button 
+                onClick={handleTaskDeletion} 
+                className="remove-task-button"><CgClose />
+                </button>
+                <button 
+                onClick={handleTaskDeletion} 
+                className="see-task-details-button"><CgClose />
+                </button>
             </div>
         </div>
     )
