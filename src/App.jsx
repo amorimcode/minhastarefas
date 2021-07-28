@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -21,6 +22,19 @@ const App = () => {
 
     setTasks(newTask)
   }
+
+  useEffect(() => {
+    const fetchTasks = async () => {
+      const { data } = await axios.get(
+        "https://jsonplaceholder.cypress.io/todos?_limit=10%22"
+        )
+
+        setTasks(data)
+    };
+
+    fetchTasks();
+  }, []);
+
 
   const handleTaskDeletion = (taskId) => {
     const newTasks = tasks.filter(task => task.id = !taskId)
@@ -53,7 +67,7 @@ const App = () => {
               handleTaskDeletion={handleTaskDeletion} />
           </>
         )} />
-        <Route path="/:TaskTitle" exact component={TaskDetails}/>
+        <Route path="/:TaskTitle" exact component={TaskDetails} />
       </div>
     </Router>
   )

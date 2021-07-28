@@ -20,11 +20,11 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
 
             <div className="buttons-container">
                 <button
-                    onClick={handleTaskDeletion}
+                    onClick={() => handleTaskDeletion(task.id)}
                     className="remove-task-button"><CgClose />
                 </button>
                 <button
-                    className="see-task-details-button"  onClick={handleTaskDetailsClick}><CgInfo />
+                    className="see-task-details-button" onClick={handleTaskDetailsClick}><CgInfo />
                 </button>
             </div>
         </div>
