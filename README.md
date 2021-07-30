@@ -1,3 +1,22 @@
+
+<br />
+<p align="center">
+  <a href="https://github.com/amorimcode/minhastarefas">
+    <img src="./assets/screen.png" alt="Logo" height="300">
+  </a>
+
+  <h3 align="center">Minhas Tarefas</h3>
+
+  <p align="center">
+    Javascript, HTML/CSS, React
+    <br />
+  </p>
+</p>
+
+> Primeira aplicação utilizando React
+
+----
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
