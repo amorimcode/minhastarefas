@@ -14,7 +14,6 @@ const AddTask = ({handleTaskAddition}) => {
         if (inputData) {
             handleTaskAddition(inputData)
             setInputData('')
-            console.log('chegou')
         }
     }
 
