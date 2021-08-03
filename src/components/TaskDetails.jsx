@@ -15,7 +15,7 @@ const TaskDetails = () => {
 
     console.log(params)
 
-    return ( 
+    return (
         <>
             <div className="back-buttom-container">
                 <Button onClick={handleBackHomeClick}>Voltar</Button>
@@ -25,7 +25,7 @@ const TaskDetails = () => {
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quo, tempore quasi quaerat aliquid sunt!</p>
             </div>
         </>
-     );
+    );
 }
- 
+
 export default TaskDetails;
